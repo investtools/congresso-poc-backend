@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Implementação rails do backend para o projeto de poc do congresso.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 2.4.1
 
-* System dependencies
+* Usando sidekiq para jobs que invocam publicam na blockchain
 
-* Configuration
+* Api que salva os dados do front (autorizacao de chave, voto, revogação de chave)
 
-* Database creation
+* Para criar o banco rake db:create
 
-* Database initialization
+* Para rodar as migrations rake db:migrate
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Para rodar os testes, execute guard
