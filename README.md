@@ -6,7 +6,7 @@ Things you may want to cover:
 
 * Ruby 2.4.1
 
-* Usando sidekiq para jobs que invocam publicam na blockchain
+* Usando sidekiq para jobs que publicam na blockchain
 
 * Api que salva os dados do front (autorizacao de chave, voto, revogação de chave)
 

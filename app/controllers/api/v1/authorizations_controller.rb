@@ -15,6 +15,16 @@ class Api::V1::AuthorizationsController < ApplicationController
     end
   end
 
+  def destroy
+    @authorization = Authorization.find_by(address: params[:id])
+    if @authorization.present?
+      @authorization.destroy
+      render json: {status: "ok", msg: "Chave revogada com sucesso"}, status: 200
+    else
+      render json: {status: "error", msg: "Chave não encontrada"}, status: 422
+    end
+  end
+
   def permitted_authorization_params
     params[:authorization].permit(:cpf, :address)
   end

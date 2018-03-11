@@ -10,11 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180311003824) do
+ActiveRecord::Schema.define(version: 20180311152321) do
 
   create_table "authorizations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "cpf", null: false
     t.string "address", null: false
+  end
+
+  create_table "law_projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "title", null: false
+    t.text "text", null: false
+  end
+
+  create_table "votes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "law_project_id", null: false
+    t.string "comment"
+    t.string "address", null: false
+    t.text "signed_message", null: false
+    t.boolean "vote_choice", null: false
   end
 
 end
