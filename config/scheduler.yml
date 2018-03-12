@@ -1,0 +1,9 @@
+authorization_sync_job:
+  cron: '* * * * *'
+  class: AuthorizationSyncJob
+  description: 'This job syncs the authorizations database to the blockchain'
+
+vote_sync_job:
+  cron: '* * * * *'
+  class: VoteSyncJob
+  description: 'This job syncs the votes database to the blockchain'
