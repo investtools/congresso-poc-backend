@@ -10,11 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180311152321) do
+ActiveRecord::Schema.define(version: 20180312184001) do
 
   create_table "authorizations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "cpf", null: false
     t.string "address", null: false
+  end
+
+  create_table "ipfs_logs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "date", null: false
+    t.string "ipfs_meta_key", null: false
+    t.string "ipfs_value", null: false
   end
 
   create_table "law_projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

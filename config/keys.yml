@@ -1,0 +1,10 @@
+ethereum:
+  abi: '[{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"bytes32"}],"name":"latestVersion","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"latestUpdate","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"timestamp","type":"uint256"},{"indexed":false,"name":"key","type":"bytes32"},{"indexed":false,"name":"value","type":"bytes32"}],"name":"Published","type":"event"},{"constant":false,"inputs":[{"name":"keys","type":"bytes32[]"},{"name":"values","type":"bytes32[]"}],"name":"publish","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"key","type":"bytes32"},{"name":"value","type":"bytes32"}],"name":"publishOne","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]'
+  private_key: '7cff77ac27ff981de9789ccbfa0a5fb504c62f9120c7a8710157be74d517339d'
+  host: 'https://rinkeby.infura.io/aNkL1V9l638Nn8duTWj1'
+  contract_address: '0x7f6e668fcfa6ee4000ddf123babe11db45d0a9fd'
+ipfs:
+  host: 'https://ipfs.infura.io'
+  port: 5001
+  authorization_meta_key: 'auth_hash'
+  vote_meta_key: 'votes_hash'
