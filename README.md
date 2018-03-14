@@ -23,3 +23,7 @@ Things you may want to cover:
 * redis-server (banco para o sidekiq)
 
 * foreman start (liga a aplicacao + sidekiq)
+
+ou 
+
+* mysqld&redis-server&foreman start
