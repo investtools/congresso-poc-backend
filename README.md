@@ -16,7 +16,7 @@ Things you may want to cover:
 
 * Para rodar os testes, execute guard
 
-* Ligando o projeto
+# Ligando o projeto
 
 * mysqld (banco)
 
