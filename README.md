@@ -15,3 +15,11 @@ Things you may want to cover:
 * Para rodar as migrations rake db:migrate
 
 * Para rodar os testes, execute guard
+
+* Ligando o projeto
+
+* mysqld (banco)
+
+* redis-server (banco para o sidekiq)
+
+* foreman start (liga a aplicacao + sidekiq)
